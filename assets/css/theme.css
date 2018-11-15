@@ -1,8 +1,16 @@
+/*
+ Colors
+ Yellow: #febd11;
+ Blue: #00529b;
+ Black: #000;
+
+ */
+
 /* Plugin */
 #club-plugin{background:#fff;}
 #club-plugin .o-kcp-knkv-link, #club-plugin .o-kcp-knkv-link-back{background:#000;color:#fff;}
 #club-plugin .paging-link.back,#club-plugin .paging-link.home,#club-plugin .paging-link.forward, #club-plugin .button{background:#000; color:#fff;}
-#club-plugin .paging-link:hover, #club-plugin .o-kcp-knkv-link:hover, #club-plugin .o-kcp-knkv-link-back:hover, #club-plugin .button:hover{background:#888;color:#fff;}
+#club-plugin .paging-link:hover, #club-plugin .o-kcp-knkv-link:hover, #club-plugin .o-kcp-knkv-link-back:hover, #club-plugin .button:hover{background:#00529b;color:#fff;}
 #club-plugin .paging-link.disabled{background-color:#ccc;cursor:not-allowed;}
 #club-plugin .paging-link.home{padding:3px 5px;}
 #club-plugin .paging{border-bottom:1px solid black;}
