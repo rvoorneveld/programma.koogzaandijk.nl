@@ -19,7 +19,7 @@
 #club-plugin .o-kcp-team-link {text-decoration:underline;cursor:pointer;}
 
 /* Programma */
-#club-plugin .group-title{background:#00529b; border-bottom:1px solid black;border-top:1px solid black;}
+#club-plugin .group-title{background:#00529b; border-bottom:1px solid #00529b;border-top:1px solid #00529b; color: white;}
 #club-plugin .list-item {border-bottom:1px solid #00529b;}
 #club-plugin .list-item:hover{background:#eee;}
 
@@ -57,6 +57,6 @@
 #club-plugin .o-kcp-loader{background:#fff;}
 
 /* Tabs*/
-#club-plugin .o-kcp-tabs,#club-plugin  .o-kcp-team-tabs {border-bottom: 1px solid #000;}
-#club-plugin .o-kcp-tabs .o-kcp-tab-item{border-right:1px solid #000;}
+#club-plugin .o-kcp-tabs,#club-plugin  .o-kcp-team-tabs {border-bottom: 1px solid #00529b; color: white;}
+#club-plugin .o-kcp-tabs .o-kcp-tab-item{border-right:1px solid #00529b;}
 #club-plugin .o-kcp-tabs .o-kcp-tab-item.active,#club-plugin .o-kcp-tabs .o-kcp-tab-item:hover{background:#00529b;}
