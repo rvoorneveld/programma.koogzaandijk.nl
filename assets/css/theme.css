@@ -59,4 +59,9 @@
 /* Tabs*/
 #club-plugin .o-kcp-tabs,#club-plugin  .o-kcp-team-tabs {border-bottom: 1px solid #00529b; color: black;}
 #club-plugin .o-kcp-tabs .o-kcp-tab-item{border-right:1px solid white;}
-#club-plugin .o-kcp-tabs .o-kcp-tab-item.active,#club-plugin .o-kcp-tabs .o-kcp-tab-item:hover{background:#00529b; color white;}
+#club-plugin .o-kcp-tabs .o-kcp-tab-item.active,#club-plugin .o-kcp-tabs .o-kcp-tab-item:hover{background:#00529b; color: white;}
+
+/* Source */
+.o-kcp-source {
+    display: none;
+}
