@@ -70,3 +70,22 @@
 /* Extra */
 #club-plugin h2 {margin: 5px 0px 0px;}
 #club-plugin ul {margin: 0px 0px 2px 0px;}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    #club-plugin .list-item .field,
+    #club-plugin .list-item .facility,
+    #club-plugin .list-item .game,
+    #club-plugin .list-item .poule {
+        display: none;
+        width: 0;
+    }
+
+    #club-plugin .list-item .time,
+    #club-plugin .list-item .date {
+        width: 16%
+    }
+    #club-plugin .list-item .team {
+        width: 34%
+    }
+}
