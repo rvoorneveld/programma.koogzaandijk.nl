@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "uglifycss": "^0.0.29"
+  },
+  "name": "programma.koogzaandijk.nl",
+  "description": "",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "uglifycss assets/css/style.css assets/css/theme.css --output assets/css/app.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvoorneveld/programma.koogzaandijk.nl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rvoorneveld/programma.koogzaandijk.nl/issues"
+  },
+  "homepage": "https://github.com/rvoorneveld/programma.koogzaandijk.nl#readme"
+}
