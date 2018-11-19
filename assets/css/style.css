@@ -73,6 +73,12 @@
 
 /* Responsive */
 @media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+    #club-plugin .list-item {
+        padding: 0 5px;
+    }
     #club-plugin .list-item .field,
     #club-plugin .list-item .facility,
     #club-plugin .list-item .game,
@@ -83,9 +89,9 @@
 
     #club-plugin .list-item .time,
     #club-plugin .list-item .date {
-        width: 16%
+        width: 14%
     }
     #club-plugin .list-item .team {
-        width: 34%
+        width: 38%
     }
 }
