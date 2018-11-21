@@ -31,18 +31,18 @@
 #club-plugin .standen tr:hover{background:#eee;}
 #club-plugin .standing_number{border-bottom:1px solid #00529b;}
 #club-plugin .standing_name{border-bottom:1px solid #00529b;}
-#club-plugin .results_week_inner{background:#00529b;border-top:1px solid black;}
+#club-plugin .results_week_inner{background:#00529b;border-top:1px solid #00529b;color:#fff;}
 #club-plugin select.o-switch-sport{background:black;color:#fff;}
 
 /* Teams */
-#club-plugin .head{background:#00529b;border-bottom:1px solid black;border-top:1px solid black;font-weight:bold;}
+#club-plugin .head{background:#00529b;border-bottom:1px solid #00529b;border-top:1px solid #00529b;font-weight:bold;color:#fff;}
 #club-plugin .show_team{border-bottom:1px solid #00529b;color:#000;}
 #club-plugin .show_team:hover{color:#000;}
 #club-plugin .show_team:hover{background:#eee;}
-#club-plugin .o-kcp-content-block h2{border-bottom:1px solid black;background:#000;color:#fff;}
+#club-plugin .o-kcp-content-block h2{border-bottom:1px solid #00529b;background:#00529b;color:#fff;}
 #club-plugin .show_team_program,#club-plugin .show_team_results,#club-plugin .show_team_standing{background:#00529b;color:#000;border:1px solid #000;}
 #club-plugin .show_team_program.active,#club-plugin .show_team_results.active,#club-plugin .show_team_standing.active{background:#000;color:#fff;}
-#club-plugin .show_team_program:hover,#club-plugin .show_team_results:hover,#club-plugin .show_team_standing:hover{color:#fff; background:#000;}
+#club-plugin .show_team_program:hover,#club-plugin .show_team_results:hover,#club-plugin .show_team_standing:hover{color:#fff; background:#00529b;}
 #club-plugin .o-kcp-content-block li.group-title-teams{border-top:0px solid #000;background:#00529b;border-bottom:1px solid black;border-top:0px solid black;}
 #club-plugin .o-standing-headline{background:#ddd;}
 #club-plugin .o-standing-headline.o-standing-line:hover{background:#ddd;}
