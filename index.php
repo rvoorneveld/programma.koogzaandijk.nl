@@ -1,3 +1,4 @@
+<?php include __DIR__.DIRECTORY_SEPARATOR.'Clubplugin.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,9 +13,9 @@
     <div id="club-plugin"></div>
     <script async src="//www.googletagmanager.com/gtag/js?id=UA-115425544-2"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="//www.knkv.nl/kcp/ef0baad8aa6d23b60/"></script>
+    <script src="<?php echo (new Clubplugin())->getUrl(); ?>"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-115425544-2');
