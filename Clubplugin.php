@@ -2,11 +2,10 @@
 
 class Clubplugin {
 
-    public $team;
-
     protected const BASE_URL = '//www.knkv.nl/kcp/';
     protected const CODE = 'ef0baad8aa6d23b60';
-    protected const TEAM_KEY = 'team';
+    protected const REQUEST_TEAM_KEY = 'team';
+    protected const REQUEST_TEAMS_OVERVIEW_KEY = 'teams';
     protected const TEAMS = [
         '1' => '12935,28372',
         '2' => '13354,30143',
@@ -48,10 +47,20 @@ class Clubplugin {
 
     public function getUrl(): string
     {
-        if (true === $this->isTeamRequest()) {
-            return $this->getTeamsUrl();
+        if (true === $this->isTeamsOverviewRequest()) {
+            return $this->getTeamsOverviewUrl();
         }
+
+        if (true === $this->isTeamRequest()) {
+            return $this->getTeamUrl();
+        }
+
         return $this->getDefaultUrl();
+    }
+
+    protected function getTeamsOverviewUrl(): string
+    {
+        return $this->getDefaultUrl().'team_url'.DIRECTORY_SEPARATOR;
     }
 
     protected function getDefaultUrl(): string
@@ -61,7 +70,7 @@ class Clubplugin {
 
     protected function getTeamFromUrl(): string
     {
-        return $_GET[static::TEAM_KEY];
+        return $_GET[static::REQUEST_TEAM_KEY];
     }
 
     protected function getTeamsCodesByKey(): string
@@ -69,14 +78,19 @@ class Clubplugin {
         return static::TEAMS[$this->getTeamFromUrl()];
     }
 
-    protected function getTeamsUrl(): string
+    protected function getTeamUrl(): string
     {
-        return $this->getDefaultUrl().'team_url'.DIRECTORY_SEPARATOR.$this->getTeamsCodesByKey();
+        return $this->getTeamsOverviewUrl().$this->getTeamsCodesByKey();
     }
 
     protected function isTeamRequest(): bool
     {
-        return true === isset($_GET['team']);
+        return true === isset($_GET[static::REQUEST_TEAM_KEY]);
+    }
+
+    protected function isTeamsOverviewRequest(): bool
+    {
+        return true === isset($_GET[static::REQUEST_TEAMS_OVERVIEW_KEY]);
     }
 
 }
