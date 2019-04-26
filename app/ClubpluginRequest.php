@@ -49,6 +49,7 @@ class ClubpluginRequest extends Request
         'F1' => '26277,17658',
         'F2' => '17792,25309',
         'F3' => '26095',
+        'F4' => '17861',
     ];
 
     public function getUrl(): string
